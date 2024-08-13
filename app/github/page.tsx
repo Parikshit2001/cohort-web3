@@ -78,10 +78,7 @@ function page() {
               <h1 className="text-3xl">{`Harkirat's Repo`}</h1>
             </div>
             <div className="w-full flex flex-col text-white space-y-3">
-              <PrimaryButton
-                href={"https://github.com/100xDevs-hkirat"}
-                target="_blank"
-              >
+              <PrimaryButton href={"https://github.com/hkirat"} target="_blank">
                 hkirat
               </PrimaryButton>
             </div>
