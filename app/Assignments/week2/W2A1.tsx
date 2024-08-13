@@ -12,7 +12,7 @@ import nacl from "tweetnacl";
 
 function W2A1() {
   const [mnemonic, setMnemonic] = useState("");
-  const [wallets, setWallets] = useState(["dsa"]);
+  const [wallets, setWallets] = useState([]);
   const [seed, setSeed] = useState<string | Buffer>("");
   const [number, setNumber] = useState(0);
 
