@@ -12,7 +12,7 @@ import nacl from "tweetnacl";
 
 function W2A1() {
   const [mnemonic, setMnemonic] = useState("");
-  const [wallets, setWallets] = useState([]);
+  const [wallets, setWallets] = useState<string[]>([]);
   const [seed, setSeed] = useState<string | Buffer>("");
   const [number, setNumber] = useState(0);
 
@@ -36,6 +36,7 @@ function W2A1() {
     const derivedSeed = derivePath(path, seed.toString("hex")).key;
     const secret = nacl.sign.keyPair.fromSeed(derivedSeed).secretKey;
     const publicKey = Keypair.fromSecretKey(secret).publicKey.toBase58();
+
     setWallets([...wallets, publicKey]);
     setNumber((prev) => prev + 1);
   };
