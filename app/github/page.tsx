@@ -75,7 +75,7 @@ function page() {
         <div className=" bg-white rounded-2xl px-2 py-5 h-fit shadow-lg sticky top-10 flex flex-col space-y-10">
           <div className="flex flex-col space-y-5">
             <div>
-              <h1 className="text-3xl">Harkirat's Repo</h1>
+              <h1 className="text-3xl">{`Harkirat's Repo`}</h1>
             </div>
             <div className="w-full flex flex-col text-white space-y-3">
               <PrimaryButton

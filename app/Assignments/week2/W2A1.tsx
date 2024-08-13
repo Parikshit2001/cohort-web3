@@ -49,7 +49,7 @@ function W2A1() {
           Add Wallet
         </SecondaryButton>
         {wallets.map((wallet, index) => (
-          <p>
+          <p key={index}>
             Wallet{index + 1}: {wallet}
           </p>
         ))}
